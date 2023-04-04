@@ -6,6 +6,7 @@
 	font-family: "ocr-a-std", monospace;
 	font-style: normal;
 	z-index: 0;
+	scroll-behavior: smooth;
 	
 }
 
@@ -73,17 +74,17 @@
 .content {
 	position: absolute;
 	top: 50%;
-	left: 8%;
+	left: 5%;
 	transform: translateY(-50%);
 }
 
 .content h1 {
-	font-size: 45px;
-	margin-top: -150px;
+	font-size: 	70px;
+	margin-top: -80px;
 }
 
 .content p {
-	color:#A8A8A8;
+	font-size: 18px;
 }
 
 .btn {
@@ -105,7 +106,25 @@
 }
 
 #description_container {
+	background-image: url('/styles/images/background1.jpeg');
+	width: 100%;
 	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	margin-top: -700px;	
+}
+
+.description p {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50%;
+
+	font-size: 40px;
+    opacity: 0;
+	transform: translateY(4rem);
+    animation: fadeInUp 1s 2.1s forwards;
 }
 
 /* job page */
@@ -253,3 +272,9 @@
 	padding-top: 20px;
 }
 
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
