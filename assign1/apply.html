@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="/styles/styles.css">
 <link rel="stylesheet" href="https://use.typekit.net/lps7arj.css">
 </head>
-<body>
+<body class="apply">
 	<div>
 		<header>
 <nav class="navbar">
@@ -21,66 +21,87 @@
 	</div>
 </nav>
 </header>
-<h1>Job Application Form</h1>
+ <h1>Job Application Form</h1>
+	<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+		<label for="job_ref_num">Job reference number:</label>
+		<input type="text" id="job_ref_num" name="job_ref_num" maxlength="5" pattern="[A-Za-z0-9]{5}" required>
 
-<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php" >
+		<label for="first_name">First name:</label>
+		<input type="text" id="first_name" name="first_name" maxlength="20" pattern="[A-Za-z]{1,20}" required>
+
+		<label for="last_name">Last name:</label>
+		<input type="text" id="last_name" name="last_name" maxlength="20" pattern="[A-Za-z]{1,20}" required>
+
+		<label for="dob">Date of birth:</label>
+		<input type="text" id="dob" name="dob" pattern="\d{1,2}/\d{1,2}/\d{4}" required>
+
+		<fieldset>
+			<legend>Gender:</legend>
+			<label for="male">Male</label>
+			<input type="radio" id="male" name="gender" value="male">
+
+			<label for="female">Female</label>
+			<input type="radio" id="female" name="gender" value="female">
+
+			<label for="other">Other</label>
+			<input type="radio" id="other" name="gender" value="other">
+		</fieldset>
+
+		<label for="street_address">Street Address:</label>
+		<input type="text" id="street_address" name="street_address" maxlength="40" required>
+
+        <label for="suburb_town">Suburb/town:</label>
+<input type="text" id="suburb_town" name="suburb_town" maxlength="40" required>
+
+<label for="state">State:</label>
+<select id="state" name="state" required>
+<option value="" selected disabled>Select state</option>
+<option value="VIC">VIC</option>
+<option value="NSW">NSW</option>
+<option value="QLD">QLD</option>
+<option value="NT">NT</option>
+<option value="WA">WA</option>
+<option value="SA">SA</option>
+<option value="TAS">TAS</option>
+<option value="ACT">ACT</option>
+</select>
+
+<label for="postcode">Postcode:</label>
+<input type="text" id="postcode" name="postcode" pattern="\d{4}" required>
+
+<label for="email">Email address:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="phone">Phone number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9\s]{8,12}" required>
+
 
 <fieldset>
-   <legend>Applicant Details</Details></legend>
-   <p><label for="Job reference number">Job reference number</label>
-      <input type="text" name="reference number" id="reference number" size="7" maxlength="5" required="required"/>
-   </p>
-   
-   
-   <p><label for="name">First Name</label>
-      <input type="text" name="First name" id="First name" maxlength="20" size="10" pattern="^[A-Za-z]+$" required="required"/>
-    
-      <label for="name">Last Name</label>
-      <input type="text" name="Last name" id="Last name" maxlength="20" size="10" pattern="^[A-Za-z]+$" required="required"/>	  
-   </p>
+	<legend>Skill list:</legend>
+	<label for="skill1">Project Management</label>
+    <input type="checkbox" id="skill1" name="skill[]" value="HTML">
+    <label for="skill1">Front-end Development</label>
+    <input type="checkbox" id="skill1" name="skill[]" value="HTML">
+    <label for="skill1">Back-end Development</label>
+    <input type="checkbox" id="skill1" name="skill[]" value="HTML">
+    <label for="skill1">Object Oriented Programming</label>
 
-   <p><label for="dob">Date of Birth</label> 
-    <input type="date" name= "dob" id="dob" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
-    </p>
-   
-    <p><label for="male">Male</label> 
-      <input type="radio" id="male" name="sex" value="male"/>
-    </p>
-    <p><label for="female">Female</label> 
-      <input type="radio" id="female" name="sex" value="female"/>
-    </p>
-   
-    <p><label for="email">Email</label> 
-        <input type="email" name= "email" id="email" required="required"/>
-    </p>
-
+	<input type="checkbox" id="skill1" name="skill[]" value="HTML">
 
     <p>
-      <label><input type="checkbox" name="Skill List"
-        value="____" checked="checked" />
-        ____</label>
-      <label><input type="checkbox" name="things[]"
-        value="____"/>____</label>
-      <label><input type="checkbox" name="things[]"
-        value="_____" />______</label>
-  <label><input type="checkbox" name="thing[]"
-        value="____"/>____</label>
-      <label><input type="checkbox" name="things[]" 
-        value="Other Skills"/>Other Skills</label>		
-</p>	
- <p>
-  <label for="comments">Other Skills<br/>
-  <textarea name="comments" rows="4" cols="40" placeholder="Write description of your skills here.">
-   
-  </textarea>
-  </label>
+        <label for="comments">Other Skills<br/>
+        <textarea name="comments" rows="4" cols="40" placeholder= "Write description of your skills here."> Write description of your skills here.</textarea>
+    </p>     
+
+</p>
 </fieldset>
 
-<p>
-<input type="submit" value="Book"/>
-<input type="reset" value="Reset form" />
-</p>
-</form>   
+
+
+<input type="submit" value="Submit">
+
+</form>
+  
 
 </div>
 

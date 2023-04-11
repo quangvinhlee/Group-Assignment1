@@ -9,16 +9,96 @@
 	scroll-behavior: smooth;
 	
 }
-
+/* style homepage */
 /* Banner styles */
 .banner {
 	width: 100%;
 	height: 100vh;
-	background-image: url('/styles/images/background.jpg');
-	background-size: cover;
-	background-position: center;
+	background-image: url('./images/background.png');
+	background-size: 100% 100%;
+	background-position: 300px;
+	padding-left: 50px;
 }
 
+/* Content styles */
+.content {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translateY(-50%);
+
+}
+
+.content h1 {
+	font-size: 	70px;
+	margin-top: -80px;
+}
+
+.content p {
+	font-size: 16px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: #877555;
+	color: white;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: all 0.2s ease-in-out;
+	margin-top: 20px;
+}
+
+
+.btn:hover {
+	background-color: #2c5a64;
+	transform: scale(1.1);
+}
+
+#description_container {
+	background-image: url('./images/background1.jpeg');
+	width: 100%;
+	background-size: 100% 100%;
+	height: 100vh;
+}
+
+.description #p1 {
+	color: white;
+	font-size: 35px;
+	padding-left: 90px;
+	padding-top: 300px;
+    opacity: 0;
+	transform: translateY(4rem);
+    animation: fadeInUp 1s 2.1s forwards;
+}
+
+.btn1 {
+	display: inline-block;
+	justify-content: center;
+	padding: 10px 30px;
+	background-color: #877555;
+	color: white;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: all 0.2s ease-in-out;
+	margin-top: 20px;
+	margin-left: 35%;
+}
+
+
+.btn1:hover {
+	background-color: #2c5a64;
+	transform: scale(1.1);
+}
+
+#footer {
+	padding-left: 50px;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #7599e117;
+}
 /* Navbar styles */
 .navbar {
 	/* position: fixed; Position navbar fixed to the top of the viewport	 */
@@ -26,7 +106,7 @@
 	height: 80px;
 	width: 100%;
 	display: flex;
-	padding: 0 50px;
+	padding: 0 40px;
 	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2);
@@ -45,7 +125,7 @@
 
 .navbar .nav-links a:hover,
 .navbar .nav-links a.active {
-	background-color: turquoise;
+	background-color: #644000;
 	color: aliceblue;
 	transform: scale(1.1);
 }
@@ -70,109 +150,119 @@
 	margin-left: 80px;
 }
 
-/* Content styles */
-.content {
-	position: absolute;
-	top: 50%;
-	left: 5%;
-	transform: translateY(-50%);
-}
-
-.content h1 {
-	font-size: 	70px;
-	margin-top: -80px;
-}
-
-.content p {
-	font-size: 18px;
-}
-
-.btn {
-	display: inline-block;
-	padding: 10px 30px;
-	background-color: rgb(25, 102, 94);
-	color: white;
-	border-radius: 20px;
-	text-decoration: none;
-	font-size: 20px;
-	transition: all 0.2s ease-in-out;
-	margin-top: 20px;
-}
-
-
-.btn:hover {
-	background-color: #2c5a64;
-	transform: scale(1.1);
-}
-
-#description_container {
-	background-image: url('/styles/images/background1.jpeg');
-	width: 100%;
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-	margin-top: -700px;	
-}
-
-.description p {
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 50%;
-
-	font-size: 40px;
-    opacity: 0;
-	transform: translateY(4rem);
-    animation: fadeInUp 1s 2.1s forwards;
-}
-
-/* job page */
+/* jobs page */
 .jobs h1 {
-	font-style: italic;
-	}
-	
-	#job_description {
-		margin: 20px 10px;
-		padding: 10px;
-	}
-	
-	.jobs aside {
-	float: right;
-	width: 25%;
-	border: 4px solid #6962ee;
-	margin: 40px;
-	padding: 20px;
-	}
-	
-	.jobs p{
-	font:  16px/1.0 ;
-	}
-	
-	.jobs h2 {
-	font:  18px/1.5 ;
-	
-	}
-	
-	.jobs ol {
-	font:  16px/1.0 ;
-	margin-left: 50px;
-	}
-	
-	.jobs ul {
-	font:  16px/1.0 ;
-	margin-left: 50px;
-	}
-	
-/* end job page */
+    font-style: normal;
+    color: #877555;
+    text-align: center;
+    margin-bottom: 20px;
+    border-color: #f4ddaf;
+    border-style:double;
+    border-top-right-radius: 15px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    background-color: #87755541;
+	padding-bottom: 30px;
 
+    }
+
+    .jobs .highlighted-sentence{
+
+        color:#877555;
+        text-decoration: underline;
+        text-decoration-color: #643f00aa;
+
+    }
+
+    .jobs body {
+        background-color: #8775553f;
+    }
+
+    .jobs .apply-button {
+        background-color: #7599e1;
+        padding: 10px 20px;
+        cursor:pointer;
+
+    }
+
+
+    .jobs h3 {
+        text-align: center;
+
+    }
+
+
+    .jobs p{
+    font:  16px/1.0;
+    margin-bottom: 20px;
+    margin-left:30px;
+
+
+
+    }
+
+    .jobs h2 {
+    font:  166px/1.5 ;
+    color:#7599e1;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    }
+
+    .jobs ol {
+    font:  14px/0.5 ;
+    margin-left: 60px;
+
+    }
+
+    .jobs ul {
+    font:  16px/0.5 ;
+    margin-left: 60px;
+
+    }
+
+    .jobs footer {
+        padding-left: 50px;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #87755585;
+    }
+
+	.jobs aside {
+        width: 25vw;
+        float: right;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 10px;
+        text-align: center;
+        border: 2px solid;
+        border-color: #877555;
+		background-color: #643f001d;
+
+    }
+
+	.jobs #section1 {
+
+		background-color: #7599e12f;
+		
+	}
+
+	.jobs #section2 {
+		padding-top: 20px;
+		background-color: #643f0025;
+		padding-bottom: 20px;
+
+
+	}
+	
+	
+
+
+/* end job page */
 /* contact */
 #contact{
 	/* background: #55ffe5; */
-	background: white;
-	background:#40E0D0;
+	background: #7599E1;
 	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
 }
 .container{
 	width: 80%;
@@ -180,27 +270,41 @@
 }
 
 .contact-box{
-	background: white;
+	background: #7599e1b8;
 	display: flex;
-
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 20px;
 }
 
 .contact-left{
 	flex-basis: 60%;
 	padding: 40px 60px;
+	
 }
 
 .contact-right{
 	flex-basis: 40%;
 	padding: 40px;
-	background: #1c00b5;
+	background: #877555;
 	color: #fff;
 }
 
+.contact_container {
+	background:#ffeecb;
+	height: 90vh;
+}
+
 .contact_container h1{
-	margin-bottom: 10px;
-	color: #2c5a64;
 	
+	margin-bottom: 10px;	
+	color: #ffeecb;
+	margin-left: 50px;
+	padding-top: 10px;
+}
+.contact_container p {
+	margin-left: 50px;
+	font-size: 20px;
 }
 
 
@@ -231,10 +335,11 @@
 
 .contact_container input{
 	width: 100%;
-	border: none;
+	border: none;	
+	border-radius: 30px 50px;
 	border-bottom: 1px solid #ccc;
 	outline: none;
-	padding-bottom: 5px ;
+	padding: 5px ;
 	box-sizing: border-box;
 }
 
@@ -249,11 +354,11 @@
 .contact_container label{
 	margin-bottom: 6px;
 	display: block;
-	color:#1c00b5;
+	color:black;
 }
 
 .contact_container button{
-	background: #1c00b5;
+	background: #644000;
 	width: 100px;
 	border: none;
 	outline: none;
@@ -271,6 +376,185 @@
 .contact_container tr td{
 	padding-top: 20px;
 }
+
+
+/* apply page */
+.apply {
+	background-color: #DAAD86 ;
+  }
+  
+  .apply h1 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  }
+  
+  .apply form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #FFEECB;
+  }
+  
+  .apply label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
+  
+  .apply input[type="text"],
+  .apply input[type="email"],
+  .apply input[type="tel"],
+  .apply textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+  }
+  
+ .apply input[type="radio"],
+ .apply input[type="checkbox"] {
+	margin-right: 5px;
+  }
+  
+  .apply  fieldset {
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+  }
+  
+  .apply legend {
+	font-weight: bold;
+  }
+  
+  .apply select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+  }
+  
+  .apply input[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+	background-color: #007bff;
+	color: #fff;
+  }
+  
+  .apply input[type="submit"]:hover {
+	background-color: #0062cc;
+  }
+  
+  .apply input:invalid {
+	border-color: #7599E1;
+  }
+  
+  .apply input:valid {
+	border-color: green;
+  }
+
+  /* about page */
+  .about {
+    background-color: #edd6a9a0;
+
+  }
+    .about dt {
+        padding-top:30px;
+        font-size: 25px;
+        text-align: left;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .about h1{
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #edd6a9af;
+            color: #643f00a3;
+            font-size: 5svw;
+            border-radius: 30px 30px;
+        }
+
+
+    .about dd {
+        font-size: 20px;
+        padding: 25px 20px;
+        border-radius: 20px 20px;
+        padding-right: 10px;
+        background-color: #7599e178;
+        margin-left: 20px;
+        margin-right: 20px;
+		clear: both;
+
+    }
+
+    .timetable {
+        margin: 20px auto;
+        width: 1380px !important;
+
+    }
+    .timetable p {
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+    }
+    .timetable table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .timetable td, th {
+        border: 2.5px solid #644000;
+        text-align: center;
+        padding: 18px;
+        background-color: #ffeecb;
+    }
+
+    .timetable th {
+        background-color: #643f0069;
+
+
+    }
+
+    .time {
+        background-color: #618bdf;
+    }
+
+    .COS10005 , .TNE10006 , .COS10009 , .COS10026 {
+        background-color: #8775558f;
+    }
+
+    /* style note section */
+    .note {
+        border: 3px solid #6b95ea;
+        float: right;
+        font-size: 20px;
+        text-align: center;
+        background-color: #7599e13f;
+        border-radius: 20px 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right:30px;
+		margin-bottom: 10px;
+    }
 
 @keyframes fadeInUp {
     to {
