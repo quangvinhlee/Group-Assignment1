@@ -1,4 +1,6 @@
-/* Global styles */
+/* media section for desktop */
+@media screen and (min-width: 768px){
+	/* Global styles */
 * {
 	margin: 0;
 	padding: 0;
@@ -7,21 +9,35 @@
 	font-style: normal;
 	z-index: 0;
 	scroll-behavior: smooth;
-	
 }
-/* style homepage */
-/* Banner styles */
+/* style homepage 
+author:Vinh
+purpose: This is the page that the applicants see first, the added CSS markups and the integrated enhancements made the page more appealing
+this makes the purpose of this elements to improve user experience and usability.
+*/
+
+
+
+/*Style banner section */
 .banner {
 	width: 100%;
 	height: 100vh;
-	background-image: url('./images/background.png');
-	background-size: 100% 100%;
-	background-position: 300px;
+	background-image: url('./images/background.jpeg') ;
+	background-size: 850px 550px;
+	background-repeat: no-repeat;
+	background-position: 500px;
 	padding-left: 50px;
 	margin-top: 2px;
+	mix-blend-mode: multiply;
 }
 
-/* Content styles */
+.banner img {
+margin-left: 450px;
+filter: blur(1.2px);
+
+}
+
+/*  Style content section */
 .content {
 	position: absolute;
 	top: 50%;
@@ -58,14 +74,15 @@
 }
 
 #description_container {
-	background-image: url('./images/background1.jpeg');
+	background: url('./images/background1.jpeg') no-repeat center center;
 	width: 100%;
-	background-size: 100% 100%;
+	animation: fade-in-out 2s ease-in-out forwards;
+	background-size: 100% auto;
 	height: 100vh;
 }
 
 .description #p1 {
-	color: white;
+	color: black;
 	font-size: 35px;
 	padding-left: 90px;
 	padding-top: 300px;
@@ -104,9 +121,8 @@
         padding: 10px 20px;
         background-color: #7599e117;
 }
-/* Navbar styles */
+/* Style Navbar section*/
 .navbar {
-	/* position: fixed; Position navbar fixed to the top of the viewport	 */
 	background-color: #fcfdfd;
 	height: 80px;
 	width: 100%;
@@ -123,7 +139,7 @@
 	text-decoration: none;
 	font-size: 20px;
 	color: #A8A8A8;
-	padding: 6px 8px;
+	padding: 8px 12px;
 	border-radius: 20px;
 	transition: all 0.2s ease-in-out;
 }
@@ -138,7 +154,7 @@
 .navbar .nav-links li {
 	list-style: none;
 	display: inline-block;
-	padding: 0 20px;
+	padding: 0 10px;
 	margin-right: 50px;
 }
 
@@ -155,7 +171,11 @@
 	margin-left: 80px;
 }
 
-/* jobs page */
+/*Style jobs page 
+author:Candela
+purpose: The purpose of this page was for applicants to be informed about what the roles and the aesthetic
+chosen helps to bring a welcoming energy around it 
+*/
 .jobs h1 {
     font-style: normal;
     color: #877555;
@@ -170,7 +190,7 @@
 	padding-bottom: 30px;
 
     }
-
+	
     .jobs .highlighted-sentence{
 
         color:#877555;
@@ -180,14 +200,19 @@
     }
 
     .jobs body {
+		margin-top: 2px;
         background-color: #8775553f;
     }
 
-    .jobs .apply-button {
+    .jobs .apply_button {
         background-color: #7599e1;
         padding: 10px 20px;
+		margin-left: 45%;
+		margin-right: 45%;
         cursor:pointer;
-
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
     }
 
 
@@ -201,6 +226,7 @@
     font:  16px/1.0;
     margin-bottom: 20px;
     margin-left:30px;
+	margin-right: 30px;
 
 
 
@@ -242,7 +268,567 @@
         border: 2px solid;
         border-color: #877555;
 		background-color: #643f001d;
+		margin-right: 30px;
+    }
 
+	.jobs #section1 {
+
+		background-color: #7599e12f;
+		
+	}
+
+	.jobs #section2 {
+		padding-top: 20px;
+		background-color: #643f0025;
+		padding-bottom: 20px;
+
+
+	}
+	
+	
+
+
+/* enhancement page 
+author: Vinh, Candela
+purpose:This page was made to explain and demonstrate how new CSS styling techniques can bring the wow-factor and show innovation.
+*/
+.enhancements{
+
+    background-color: #618bdf43;
+    
+
+}
+.enhancements h1 {
+    color: #644000;
+    text-align: center;
+    font-size: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #c9881837;
+}
+
+.enhancements p{
+
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.enhancements h2 {
+
+    color: #523b13;
+    text-align: left;
+    text-decoration-line: underline;
+    padding: 20px 20px; 
+	text-decoration-color: #523b13;
+
+
+}
+
+.enhancements footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	color:#007bff
+	
+}
+
+/* Style apply page
+author: Ayush,
+purpose: chose the aesthetics which were welcoming to the applicants during their application process
+*/
+.apply {
+	background-color: #DAAD86 ;
+  }
+  
+  .apply h1 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  }
+  
+  .apply form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #FFEECB;
+  }
+  
+  .apply label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
+  
+  .apply input[type="text"],
+  .apply input[type="email"],
+  .apply input[type="tel"],
+  .apply textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+  }
+  
+ .apply input[type="radio"],
+ .apply input[type="checkbox"] {
+	margin-right: 5px;
+  }
+  
+  .apply  fieldset {
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+  }
+  
+  .apply legend {
+	font-weight: bold;
+  }
+  
+  .apply select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+  }
+  
+  .apply input[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+	background-color: #007bff;
+	color: #fff;
+  }
+  
+  .apply input[type="submit"]:hover {
+	background-color: #0062cc;
+  }
+  
+  .apply input:invalid {
+	border-color: #7599E1;
+  }
+  
+  .apply input:valid {
+	border-color: green;
+  }
+
+  /* Style about page 
+  author: Vinh, Candela and Joshua(10%) 
+  purpose: to implement a nice layout for the details about the team
+  */
+  .about {
+	margin-top: 2px;
+    background-color: #edd6a9a0;
+
+  }
+    .about dt {
+        padding-top:30px;
+        font-size: 25px;
+        text-align: left;
+        padding-left: 20px;
+        padding-bottom: 10px;
+		clear: both;
+
+    }
+	
+	
+	/* Style figure */
+	.about figure {
+		float: right;
+	}
+
+	.about figure figcaption {
+		display: flex;
+		justify-content: center;
+		margin-right: 300px;
+
+	}
+	.about  img {
+		height: 200px;
+		width: auto;
+		margin-right: 300px;
+		border: 1px solid black;
+	}
+    .about h1{
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #edd6a9af;
+            color: #643f00a3;
+            font-size: 5svw;
+            border-radius: 30px 30px;
+        }
+		
+		.about #gp_members {
+			margin-top: 20px;
+			margin-left: 10px;
+			font-size: 30px;
+			font-weight: 700;
+		}
+
+    .about dd {
+        font-size: 20px;
+        padding: 25px 20px;
+        border-radius: 20px 20px;
+        padding-right: 10px;
+        background-color: #7599e178;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+	/* Style timetable */
+    .timetable {
+        margin: 20px auto;
+        width: 1380px !important;
+
+    }
+    .timetable p {
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+    }
+    .timetable table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .timetable td, th {
+        border: 2.5px solid #644000;
+        text-align: center;
+        padding: 18px;
+        background-color: #ffeecb;
+    }
+
+    .timetable th {
+        background-color: #643f0069;
+
+
+    }
+
+    .time {
+        background-color: #618bdf;
+    }
+
+    .COS10005 , .TNE10006 , .COS10009 , .COS10026 {
+        background-color: #8775558f;
+    }
+
+    /* style note section */
+    .note {
+        border: 3px solid #6b95ea;
+        float: right;
+        font-size: 20px;
+        background-color: #7599e13f;
+        border-radius: 20px 20px;
+       	padding: 10px;
+		margin-right: 50px;
+    }
+
+
+
+ /* All animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  
+  @keyframes fade-in-out {
+	0% {
+	  opacity: 0;
+	}
+	25% {
+	  opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+
+	75% {
+		opacity: 0;
+	}
+	
+  }
+
+}
+	/* media section for mobile */
+  @media screen and (max-width: 767px) {
+	
+	
+
+/* Global styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "ocr-a-std", monospace;
+	font-style: normal;
+	z-index: 0;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+/* style homepage */
+/* Banner styles */
+.banner {
+	width: 100%;
+	height: 70vh;
+	background-image: url('./images/background.jpeg');
+	background-size: 100% 100%;
+	padding-left: 10px;
+	margin-top: 2px;
+	mix-blend-mode: multiply;
+}
+
+
+
+/* Content styles */
+.content {
+	position: absolute;
+	top: 30%;
+	left: 2%;
+	transform: translateY(-50%);
+
+}
+
+.content h1 {
+	font-size: 	20px;
+}
+
+.content p {
+	font-size: 10px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #877555;
+	color: white;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 10px;
+	transition: all 0.2s ease-in-out;
+	margin-top: 10px;
+}
+
+
+.btn:hover {
+	background-color: #2c5a64;
+	transform: scale(1.1);
+}
+
+#description_container {
+	background: url('./images/background1.jpeg') no-repeat center center;
+	width: 100%;
+	animation: fade-in-out 2s ease-in-out forwards;
+	background-size: 100% auto;
+	height: 70vh;
+}
+
+.description #p1 {
+	color: black;
+	font-size: 12px;
+	padding-left: 10px;
+	padding-top: 300px;
+    opacity: 0;
+	transform: translateY(4rem);
+    animation: fadeInUp 1s 2.1s forwards;
+}
+
+.btn1 {
+	display: inline-block;
+	justify-content: center;
+	padding: 10px 20px;
+	background-color: #877555;
+	color: white;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 10px;
+	transition: all 0.2s ease-in-out;
+	margin-top: 10px;
+	opacity: 0;
+	transform: translateY(4rem);
+    animation: fadeInUp 1s 2.5s forwards;
+margin-left: 100px;
+}
+
+
+.btn1:hover {
+	background-color: #2c5a64;
+	transform: scale(1.1);
+}
+
+#footer {
+	padding-left: 50px;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #7599e117;
+}
+/* Navbar styles */
+.navbar {
+	/* position: fixed; Position navbar fixed to the top of the viewport	 */
+	background-color: #fcfdfd;
+	height: auto;
+	width: 100%;
+	display: flex;
+	padding: 0 20px;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.navbar .nav-links a {
+	text-decoration: none;
+	font-size: 8px;
+	color: #A8A8A8;
+	padding: 3px 5px;
+	border-radius: 20px;
+	transition: all 0.2s ease-in-out;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+	background-color: #644000;
+	color: aliceblue;
+	transform: scale(1.1);
+}
+
+.navbar .nav-links li {
+	list-style: none;
+	display: inline-block;
+	padding: 3px;
+}
+
+.navbar .logo {
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #A8A8A8;
+	font-weight: 800;
+}
+
+.navbar .logo img {
+	width: 20px;
+	height: auto;
+	margin-left: 2px;
+}
+
+/* jobs page */
+.jobs h1 {
+    font-style: normal;
+	font-size: 18px;
+    color: #877555;
+    text-align: center;
+    margin-bottom: 10px;
+    border-color: #f4ddaf;
+    border-style:double;
+    border-top-right-radius: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #87755541;
+	padding-bottom: 10px;
+
+    }
+	
+    .jobs .highlighted-sentence{
+
+        color:#877555;
+        text-decoration: underline;
+        text-decoration-color: #643f00aa;
+
+    }
+
+    .jobs body {
+		margin-top: 2px;
+        background-color: #8775553f;
+    }
+
+    .jobs .apply_button {
+        background-color: #7599e1;
+        padding: 10px 20px;
+		margin-left: 45%;
+		margin-right: 45%;
+        cursor:pointer;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+    }
+
+
+    
+
+
+    .jobs h3 {
+        text-align: center;
+		font-size: 14px;
+    }
+
+
+    .jobs p{
+    font:  8px;
+    margin-bottom: 10px;
+    margin-left:10px;
+	margin-right: 10px;
+
+
+
+    }
+
+    .jobs h2 {
+    font:  15px ;
+    color:#7599e1;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    }
+
+    .jobs ol {
+    font:  14px/0.5 ;
+    margin-left: 30px;
+
+    }
+
+    .jobs ul {
+    font:  16px/0.5 ;
+    margin-left: 60px;
+
+    }
+
+    .jobs footer {
+        padding-left: 50px;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #87755585;
+    }
+
+	.jobs aside {
+        width: 25vw;
+        float: right;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-right: 10px;
+        text-align: center;
+        border: 2px solid;
+        border-color: #877555;
+		background-color: #643f001d;
+		margin-right: 10px;
     }
 
 	.jobs #section1 {
@@ -390,14 +976,14 @@
   
   .apply h1 {
 	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
   }
   
   .apply form {
 	max-width: 600px;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	background-color: #FFEECB;
@@ -417,7 +1003,7 @@
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	font-size: 16px;
+	font-size: 10px;
 	margin-bottom: 15px;
 	box-sizing: border-box;
   }
@@ -428,7 +1014,7 @@
   }
   
   .apply  fieldset {
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -456,7 +1042,7 @@
 	border: none;
 	border-radius: 5px;
 	font-size: 16px;
-	margin-top: 20px;
+	margin-top: 10px;
 	cursor: pointer;
 	background-color: #007bff;
 	color: #fff;
@@ -476,94 +1062,106 @@
 
   /* about page */
   .about {
+	margin-top: 2px;
     background-color: #edd6a9a0;
 
   }
     .about dt {
-        padding-top:30px;
-        font-size: 25px;
+        padding-top:10px;
+        font-size: 15px;
         text-align: left;
-        padding-left: 20px;
-        padding-bottom: 10px;
-    }
-
-    .about h1{
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #edd6a9af;
-            color: #643f00a3;
-            font-size: 5svw;
-            border-radius: 30px 30px;
-        }
-
-
-    .about dd {
-        font-size: 20px;
-        padding: 25px 20px;
-        border-radius: 20px 20px;
-        padding-right: 10px;
-        background-color: #7599e178;
-        margin-left: 20px;
-        margin-right: 20px;
+        padding-left: 10px;
+        padding-bottom: 5px;
 		clear: both;
 
     }
 
-    .timetable {
-        margin: 20px auto;
-        width: 1380px !important;
+    .about h1{
+            text-align: center;
+            padding: 10px 10px;
+            background-color: #edd6a9af;
+            color: #643f00a3;
+            font-size: 20px;
+            border-radius: 30px 30px;
+        }
+		.about h2 {
+			margin-top: 5px;
+			margin-left: 10px;
+			font-size: 4px;
+		}
 
+    .about dd {
+        font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 20px 20px;
+        padding-right: 10px;
+        background-color: #7599e178;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    .timetable {
+      width: auto !important;
     }
     .timetable p {
-        display: flex;
-        justify-content: center;
-        font-size: 35px;
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
     }
     .timetable table {
-        width: 100%;
-        border-collapse: collapse;
+      width: 100%;
+      border-collapse: collapse;
     }
-
+    
     .timetable td, th {
-        border: 2.5px solid #644000;
-        text-align: center;
-        padding: 18px;
-        background-color: #ffeecb;
+      border: 1px solid black;
+      text-align: center;
+      padding: 6px 1px;
+      font-size: 8px;
     }
-
+    
     .timetable th {
-        background-color: #643f0069;
-
-
+      background-color: hsl(0, 0%, 70%);
     }
-
+    
     .time {
-        background-color: #618bdf;
+      background-color: #F9BCB9;
     }
-
+    
     .COS10005 , .TNE10006 , .COS10009 , .COS10026 {
-        background-color: #8775558f;
+      background-color: #F6958F;
     }
-
+    
     /* style note section */
     .note {
-        border: 3px solid #6b95ea;
-        float: right;
-        font-size: 20px;
-        text-align: center;
-        background-color: #7599e13f;
-        border-radius: 20px 20px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-right:30px;
-		margin-bottom: 10px;
+        margin-top: 3px;
+      border: 1px solid black;
+      float: right;
+      font-size: 10px;
+      padding: 3px;
     }
-
 @keyframes fadeInUp {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
+  
+  @keyframes fade-in-out {
+	0% {
+	  opacity: 0;
+	}
+	25% {
+	  opacity: 1;
+	}
+	
+	
+	
+  }
+}
+
+
+	
+  

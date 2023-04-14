@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>HelixTech</title>
 <link rel="stylesheet" href="/styles/styles.css">
 <link rel="stylesheet" href="https://use.typekit.net/lps7arj.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<meta charset="UTF-8">
+
+
 </head>
 <body class="apply">
 	<div>
 		<header>
-<nav class="navbar">
-	<a href="index.html" class="logo"><img src="/images/logo.png" alt="logo"></a>
-	<div class="nav-links">
-	<ul>
-		<li><a href="index.html" >Home</a></li>
-		<li><a href="jobs.html" >Jobs</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="apply.html" class="active">Apply</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
+		<nav class="navbar">
+		<a href="index.html" class="logo"><img src="/images/logo.png" alt="logo"></a>
+		<div class="nav-links">
+		<ul>
+			<li><a href="index.html" >Home</a></li>
+			<li><a href="jobs.html" >Jobs</a></li	>
+			<li><a href="about.html">About</a></li	>
+			<li><a href="apply.html" class="active">Apply</a></li	>
+			<li><a href="enhancements.html">Enhancements</a></li>
+		</ul>
 	</div>
 </nav>
 </header>
+</div>
+<div>
  <h1>Job Application Form</h1>
 	<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
 		<label for="job_ref_num">Job reference number:</label>
@@ -80,20 +87,14 @@
 	<legend>Skill list:</legend>
 	<label for="skill1">Project Management</label>
     <input type="checkbox" id="skill1" name="skill[]" value="HTML">
-    <label for="skill1">Front-end Development</label>
-    <input type="checkbox" id="skill1" name="skill[]" value="HTML">
-    <label for="skill1">Back-end Development</label>
-    <input type="checkbox" id="skill1" name="skill[]" value="HTML">
-    <label for="skill1">Object Oriented Programming</label>
-
-	<input type="checkbox" id="skill1" name="skill[]" value="HTML">
-
-    <p>
-        <label for="comments">Other Skills<br/>
-        <textarea name="comments" rows="4" cols="40" placeholder= "Write description of your skills here."> Write description of your skills here.</textarea>
-    </p>     
-
-</p>
+    <label for="skill2">Front-end Development</label>
+    <input type="checkbox" id="skill2" name="skill[]" value="HTML">
+    <label for="skill3">Back-end Development</label>
+    <input type="checkbox" id="skill3" name="skill[]" value="HTML">
+    <label for="skill4">Object Oriented Programming</label>
+    <input type="checkbox" id="skill4" name="skill[]" value="HTML">
+    <label for="comments">Other Skills </label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40" placeholder= "Write description of your skills here."></textarea>
 </fieldset>
 
 
@@ -102,7 +103,6 @@
 
 </form>
   
-
 </div>
 
 </body>
