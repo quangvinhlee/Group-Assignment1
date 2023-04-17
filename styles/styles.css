@@ -493,53 +493,47 @@ purpose: chose the aesthetics which were welcoming to the applicants during thei
 
     }
 	/* Style timetable */
-    .timetable {
-        margin: 20px auto;
-        width: 1380px !important;
-
+      .timetable {
+      width: auto !important;
     }
     .timetable p {
-        display: flex;
-        justify-content: center;
-        font-size: 35px;
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
     }
     .timetable table {
-        width: 100%;
-        border-collapse: collapse;
+      width: 100%;
+      border-collapse: collapse;
     }
-
+    
     .timetable td, th {
-        border: 2.5px solid #644000;
-        text-align: center;
-        padding: 18px;
-        background-color: #ffeecb;
+      border: 1px solid black;
+      text-align: center;
+      padding: 6px 1px;
+      font-size: 8px;
     }
-
+    
     .timetable th {
-        background-color: #643f0069;
-
-
+      background-color: hsl(0, 0%, 70%);
     }
-
+    
     .time {
-        background-color: #618bdf;
+      background-color: #F9BCB9;
     }
-
+    
     .COS10005 , .TNE10006 , .COS10009 , .COS10026 {
-        background-color: #8775558f;
+      background-color: #F6958F;
     }
-
+    
     /* style note section */
     .note {
-        border: 3px solid #6b95ea;
-        float: right;
-        font-size: 20px;
-        background-color: #7599e13f;
-        border-radius: 20px 20px;
-       	padding: 10px;
-		margin-right: 50px;
+        margin-top: 3px;
+      border: 1px solid black;
+      float: right;
+      font-size: 10px;
+      padding: 3px;
     }
-
+    
 
 
  /* All animation */
@@ -583,15 +577,16 @@ purpose: chose the aesthetics which were welcoming to the applicants during thei
 	font-style: normal;
 	z-index: 0;
 	scroll-behavior: smooth;
-	overflow-x: hidden;
 }
 /* style homepage */
 /* Banner styles */
 .banner {
 	width: 100%;
-	height: 70vh;
+	height: 50vh;
 	background-image: url('./images/background.jpeg');
-	background-size: 100% 100%;
+	background-size: 390px auto;
+	background-repeat: no-repeat;
+	background-position: 40px 100px;
 	padding-left: 10px;
 	margin-top: 2px;
 	mix-blend-mode: multiply;
@@ -603,7 +598,7 @@ purpose: chose the aesthetics which were welcoming to the applicants during thei
 .content {
 	position: absolute;
 	top: 30%;
-	left: 2%;
+	left: 1%;
 	transform: translateY(-50%);
 
 }
@@ -626,6 +621,7 @@ purpose: chose the aesthetics which were welcoming to the applicants during thei
 	font-size: 10px;
 	transition: all 0.2s ease-in-out;
 	margin-top: 10px;
+	margin-left: 15px;
 }
 
 
@@ -639,14 +635,14 @@ purpose: chose the aesthetics which were welcoming to the applicants during thei
 	width: 100%;
 	animation: fade-in-out 2s ease-in-out forwards;
 	background-size: 100% auto;
-	height: 70vh;
+	height: 60vh;
 }
 
 .description #p1 {
 	color: black;
 	font-size: 12px;
 	padding-left: 10px;
-	padding-top: 300px;
+	padding-top: 250px;
     opacity: 0;
 	transform: translateY(4rem);
     animation: fadeInUp 1s 2.1s forwards;
@@ -1101,46 +1097,103 @@ margin-left: 100px;
 
     }
 
-    .timetable {
-      width: auto !important;
-    }
-    .timetable p {
-      display: flex;
-      justify-content: center;
-      font-size: 18px;
-    }
-    .timetable table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    
-    .timetable td, th {
-      border: 1px solid black;
-      text-align: center;
-      padding: 6px 1px;
-      font-size: 8px;
-    }
-    
-    .timetable th {
-      background-color: hsl(0, 0%, 70%);
-    }
-    
-    .time {
-      background-color: #F9BCB9;
-    }
-    
-    .COS10005 , .TNE10006 , .COS10009 , .COS10026 {
-      background-color: #F6958F;
-    }
-    
-    /* style note section */
-    .note {
-        margin-top: 3px;
-      border: 1px solid black;
-      float: right;
-      font-size: 10px;
-      padding: 3px;
-    }
+	.timetable {
+		width: auto !important;
+	  }
+	  .timetable p {
+		display: flex;
+		justify-content: center;
+		font-size: 10px;
+	  }
+	  .timetable table {
+		width: 100%;
+		border-collapse: collapse;
+	  }
+	  
+	  .timetable td, th {
+		border: 1px solid black;
+		text-align: center;
+		font-size: 7px;
+	  }
+	  
+	  .timetable th {
+		background-color: hsl(0, 0%, 70%);
+	  }
+	  
+	  .time {
+		background-color: #F9BCB9;
+	  }
+	  
+	  .COS10005 , .TNE10006 , .COS10009 , .COS10026 {
+		background-color: #F6958F;
+	  }
+	  
+	  /* style note section */
+	  .note {
+		margin-top: 3px;
+		border: 1px solid black;
+		float: right;
+		font-size: 10px;
+		padding: 3px;
+	  }
+	  
+	  .about figure {
+		float: right;
+	}
+
+	.about figure figcaption {
+		display: flex;
+		justify-content: center;
+		font-size: 8px;
+	}
+	.about  img {
+		height: auto;
+		width: 200px;
+		border: 1px solid black;
+	}
+
+	.enhancements{
+
+		background-color: #618bdf43;
+		
+	
+	}
+	.enhancements h1 {
+		color: #644000;
+		text-align: center;
+		font-size: 24px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #c9881837;
+	}
+	
+	.enhancements p{
+	
+		color: black;
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 14px;
+	}
+	
+	.enhancements h2 {
+	
+		color: #523b13;
+		text-align: left;
+		text-decoration-line: underline;
+		padding: 20px 20px; 
+		text-decoration-color: #523b13;
+	
+	
+	}
+	
+	.enhancements footer {
+		display: flex;
+		justify-content: center;
+		color:#007bff
+		
+	}
+	
 @keyframes fadeInUp {
     to {
         opacity: 1;
