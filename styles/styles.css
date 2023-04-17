@@ -493,47 +493,54 @@ purpose: chose the aesthetics which were welcoming to the applicants during thei
 
     }
 	/* Style timetable */
-      .timetable {
-      width: auto !important;
+	.timetable {
+        margin: 20px auto;
+        width: 1380px !important;
+
     }
     .timetable p {
-      display: flex;
-      justify-content: center;
-      font-size: 18px;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
     }
     .timetable table {
-      width: 100%;
-      border-collapse: collapse;
+        width: 100%;
+        border-collapse: collapse;
     }
-    
+
     .timetable td, th {
-      border: 1px solid black;
-      text-align: center;
-      padding: 6px 1px;
-      font-size: 8px;
+        border: 2.5px solid #644000;
+        text-align: center;
+        padding: 18px;
+        background-color: #ffeecb;
     }
-    
+
     .timetable th {
-      background-color: hsl(0, 0%, 70%);
+        background-color: #643f0069;
+
+
     }
-    
+
     .time {
-      background-color: #F9BCB9;
+        background-color: #618bdf;
     }
-    
+
     .COS10005 , .TNE10006 , .COS10009 , .COS10026 {
-      background-color: #F6958F;
+        background-color: #8775558f;
     }
-    
+
     /* style note section */
     .note {
-        margin-top: 3px;
-      border: 1px solid black;
-      float: right;
-      font-size: 10px;
-      padding: 3px;
+        border: 3px solid #6b95ea;
+        float: right;
+        font-size: 20px;
+        background-color: #7599e13f;
+        border-radius: 20px 20px;
+       	padding: 10px;
+		margin-right: 50px;
     }
-    
+
+
 
 
  /* All animation */
